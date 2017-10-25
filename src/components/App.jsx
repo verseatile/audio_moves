@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import AudioPlayer from '../components/AudioPlayer.jsx'
+import Dragbar from '../components/Dragbar.jsx'
+import fs from 'fs'
 
 export default class App extends Component {
     constructor() {
@@ -12,6 +14,17 @@ export default class App extends Component {
         text.innerText = "SOME TEXT"
 
         el.appendChild(text)
+
+        // (() => {
+        //     // fs.readdirSync('./', (err, files) => {
+        //     //     console.log(`\n${files}`)
+        //     //     dirs += files
+        //     // })
+        
+        //     let files = fs.readdirSync('./')
+        //     console.log(files)
+        
+        // })()
     }
 
 
@@ -19,7 +32,8 @@ export default class App extends Component {
     render() {
         return (
             <div>
-                APP DOE
+                <Dragbar />
+                APP DOEZ
                 <AudioPlayer />
             </div>
         )

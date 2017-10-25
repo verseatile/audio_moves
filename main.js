@@ -22,16 +22,7 @@ let mainWindow = null;
 
 let dirs = [];
 
-(() => {
-    // fs.readdirSync('./', (err, files) => {
-    //     console.log(`\n${files}`)
-    //     dirs += files
-    // })
 
-    let files = fs.readdirSync('./')
-    console.log(files)
-
-})()
 
 
 

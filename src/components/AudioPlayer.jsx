@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import fs from 'fs'
 
 
 export default class AudioPlayer extends Component {
@@ -7,12 +8,20 @@ export default class AudioPlayer extends Component {
     }
 
     componentWillMount() {
-        const context = new AudioContext()
+       // const context = new AudioContext()
 
-        console.log(context)
+       // console.log(context)
 
-       const fs = require('fs')
-       console.log(fs)
+        (() => {
+            // fs.readdirSync('./', (err, files) => {
+            //     console.log(`\n${files}`)
+            //     dirs += files
+            // })
+        
+            // let files = fs.readdirSync('./')
+            // console.log(files)
+        
+        })()
 
         
 
