@@ -1,4 +1,18 @@
+body {
+    margin: 0;
+    font-family: 'Roboto';
+    font-weight: 200;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 .title-bar {
     -webkit-app-region: drag;
-    height: 20px;
+    height: 35px;
+    width: 100%;
+    position: fixed;
+}
+
+.within-body {
+    padding-top: 50px; /* pushes everything below the dragbar below it */
 }
